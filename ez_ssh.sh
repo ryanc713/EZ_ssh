@@ -3,9 +3,13 @@
 # Description: EZ SSH Login to Server
 # Date: 01-04-2021
 
-ip=REMOTE_HOST_IP
-id=/PATH/TO/PRIVATE/KEY
-p=PORT
-u=USER
+# IP Address for the server you want to connect to
+IP=SERVER_IP
+# Identity file when password authentication is turned off
+ID=/PATH/TO/PRIVATE/KEY
+# SSH Port
+P=PORT
+# SSH User
+U=USER
 
-ssh -i $id -p $p $u@$ip
+ssh -i $ID -p $P $U@$IP
